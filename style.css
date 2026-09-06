@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    background-color: whitesmoke;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #555;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin: 5px 0;
+    min-height: 18px;
+}
+
+#charCounter {
+    text-align: right;
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+#submitBtn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#submitBtn:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+#successPage {
+    display: none;
+    text-align: center;
+}
+
+#successPage h1 {
+    color: green;
+}
+
+#successPage p {
+    font-size: 18px;
+}
+
+#registeredUsername {
+    font-weight: bold;
+}
+#backBtn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #978989;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#backBtn:hover {
+    background-color: #555;
+}
+
+
+
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input,
+    textarea {
+        font-size: 16px;
+    }
+}

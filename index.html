@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Registration System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Smart Registration System</h1>
+
+        <form id="registrationForm">
+
+            <!-- Name -->
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <p id="nameError" class="error"></p>
+
+
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter your email">
+            <p id="emailError" class="error"></p>
+
+
+            <!-- Password -->
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password">
+            <p id="passwordError" class="error"></p>
+
+
+            <!-- Bio -->
+            <label for="bio">Bio</label>
+            <textarea id="bio" maxlength="200" placeholder="Tell us about yourself..."></textarea>
+
+            <p id="charCounter">0 / 200 characters</p>
+
+
+            <!-- Submit -->
+            <button type="submit" id="submitBtn" disabled>
+                Register
+            </button>
+
+        </form>
+
+        <div id="successPage">
+
+            <h1>🎉 Registration Successful!</h1>
+
+            <p>
+                <span id="registeredUsername"></span>,
+                your registration is successful.
+            </p>
+
+            <button id="backBtn">Go Back</button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
