@@ -131,7 +131,3 @@ This project was created to practice fundamental **frontend web development conc
 ## 👨‍💻 Author
 
 **Vaithees**
-
-B.Tech Artificial Intelligence and Data Science Student
-
-Interested in **Frontend and Full Stack Web Development**.
